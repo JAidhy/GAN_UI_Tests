@@ -13,7 +13,6 @@ public class SignUpPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-
     CommonMethods commonObject = new CommonMethods();
 
     @FindBy(id = "title")
