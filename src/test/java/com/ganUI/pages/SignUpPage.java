@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class SignUpPage extends BasePage {
 
-    public SignUpPage(){
+    public SignUpPage() {
         PageFactory.initElements(driver, this);
     }
 
@@ -21,13 +21,13 @@ public class SignUpPage extends BasePage {
     @FindBy(id = "title")
     WebElement title_dropDown;
 
-    @FindBy(id="forename")
+    @FindBy(id = "forename")
     WebElement firstName_textBox;
 
-    @FindBy(css="input[name^='map(last']")
+    @FindBy(css = "input[name^='map(last']")
     WebElement lastName_textBox;
 
-    @FindBy(css="input[name='map(terms)']")
+    @FindBy(css = "input[name='map(terms)']")
     WebElement tAndC_checkbox;
 
     @FindBy(css = "input[id='form']")
@@ -36,39 +36,32 @@ public class SignUpPage extends BasePage {
     @FindBy(css = "label[for='dob']")
     WebElement dobErrorMessage_label;
 
-    public void enterFirstName(String firstName){
+    public void enterFirstName(String firstName) {
         firstName_textBox.sendKeys(firstName);
     }
 
-    public void enterLastName(String lastName){
+    public void enterLastName(String lastName) {
         lastName_textBox.sendKeys(lastName);
     }
 
-    public void selectTitle(){
+    public void selectTitle() {
         Select select = new Select(title_dropDown);
         select.selectByValue("Mr");
     }
 
-    public void clickTAndC(){
+    public void clickTAndC() {
         commonObject.clickWebElement(tAndC_checkbox);
     }
 
-    public void clickJoinNowSignUp(){
+    public void clickJoinNowSignUp() {
         commonObject.clickWebElement(joinNowSignUpPage_button);
     }
 
-    public void verifyDobErrorMessage(String errorMessage){
-
-//        softAssertion.assertThat(dobErrorMessage_label.getText()
-//                     .contains("required"))
-//                     .as("This field is required");
+    public void verifyDobErrorMessage(String errorMessage) {
 
         Assert.assertEquals(errorMessage, dobErrorMessage_label.getText());
 
     }
-
-
-
 
 
 }

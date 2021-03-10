@@ -6,7 +6,6 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 
-
 @RunWith(Cucumber.class)
 @CucumberOptions(glue = {"com.ganUI.stepdefs"},
         tags = {"@signUp"},

@@ -10,10 +10,8 @@ import org.assertj.core.api.SoftAssertions;
 public class SignUpStepDefs {
 
 
-
     HomePage homePageObject = new HomePage();
     SignUpPage signUpObject = new SignUpPage();
-
 
 
     @When("I go to signup page")
@@ -28,7 +26,7 @@ public class SignUpStepDefs {
         signUpObject.enterLastName(lastName);
     }
 
-    @And("I select terms and conditions checkbox")
+    @And("I select terms and conditions")
     public void iSelectTermsAndConditionsCheckbox() {
         signUpObject.clickTAndC();
     }
@@ -41,6 +39,7 @@ public class SignUpStepDefs {
 
     @Then("I should see {string} for DoB field")
     public void iShouldSeeForDoBField(String errorMessage) {
+
         signUpObject.verifyDobErrorMessage(errorMessage);
     }
 }

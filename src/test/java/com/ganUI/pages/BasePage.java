@@ -1,6 +1,6 @@
 package com.ganUI.pages;
 
-import com.ganUI.utility.BaseTest;
+import com.ganUI.BaseTest;
 import com.ganUI.utility.PropertiesUtil;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

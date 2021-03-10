@@ -1,5 +1,6 @@
-package com.ganUI.utility;
+package com.ganUI;
 
+import com.ganUI.utility.PropertiesUtil;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
