@@ -1,8 +1,6 @@
 package com.ganUI.pages;
 
 import com.ganUI.utility.CommonMethods;
-import org.assertj.core.api.Assertions;
-import org.assertj.core.api.SoftAssertions;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,7 +13,7 @@ public class SignUpPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    SoftAssertions softAssertion = new SoftAssertions();
+
     CommonMethods commonObject = new CommonMethods();
 
     @FindBy(id = "title")
