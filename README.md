@@ -1,10 +1,11 @@
-#GAN_UI Automation Test
+#Lifeworks Automation Test
 Added scenario in BDD format 
-1. Scenario to verify error message on SignUp journey
+1. Scenarios to verify homepage
+2. Scenario to verify careers
 
 #Prerequisite to run the tests
 - Java 8 and above.
-- Maven
+- Maven~~~~
 
 ##Run Test
 Tests can be executed in following way
